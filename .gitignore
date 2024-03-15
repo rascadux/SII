@@ -1,0 +1,15 @@
+.ds_store
+
+practicas-pasadas/
+
+# ANGULAR
+/node_modules/
+/dist
+.vscode/
+e2e/
+.idea/
+.angular/
+
+
+
+

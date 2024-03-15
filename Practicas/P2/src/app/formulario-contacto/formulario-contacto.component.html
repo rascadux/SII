@@ -1,0 +1,35 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{accion}} contacto</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cierre usuario')"></button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input class="form-control" id="nombre" [(ngModel)]="contacto.nombre" placeholder="nombre">
+      <label for="apellidos">Apellidos:</label>
+      <input class="form-control" id="apellidos" [(ngModel)]="contacto.apellidos" placeholder="apellidos">
+      <label for="email">E-mail:</label>
+      <input class="form-control" id="email" [(ngModel)]="contacto.email" placeholder="fulanito@mengano.com">
+      <label for="telefono">Telefono:</label>
+      <input class="form-control" id="telefono" [(ngModel)]="contacto.telefono" placeholder="(34) 123456789">
+      <label for="genero">Género:</label>
+      <select class="form-select" id="genero" [(ngModel)]="contacto.genero">
+        <option value="">Prefiero no decirlo</option>
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+        <option value="Gay">Gay</option>
+        <option value="Lesbiana">Lesbiana</option>
+        <option value="Transexual">Transexual</option>
+        <option value="Bisexual">Bisexual</option>
+        <option value="Intersexual">Intersexual</option>
+        <option value="Queer">Queer</option>
+        <option value="Asexual">Asexual</option>
+        <option value="Pansexual">Pansexual</option>
+        <option value="Polisexual">Polisexual</option>
+        <option value="Otro">Otro</option>
+      </select>
+    </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="guardarContacto()">Guardar</button>
+</div>
